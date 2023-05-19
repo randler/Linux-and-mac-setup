@@ -29,6 +29,7 @@ if [ "$opcao" == "1" ]; then
     source ~/.bashrc
     # Instalando o Node.js
     nvm install node
+    npm install -g yarn
     # Instalando o Discord
     sudo snap install discord
     # Configurando o repositório do AnyDesk
@@ -77,6 +78,7 @@ elif [ "$opcao" == "2" ]; then
     # Instalando o Node.js
     brew install nvm
     brew install node
+    npm install -g yarn
     # Instalando o Discord
     brew install --cask discord
     # Instalando o AnyDesk
@@ -94,7 +96,7 @@ elif [ "$opcao" == "2" ]; then
     # Instalando o Insomnia
     brew install --cask insomnia
     # instalando pod
-    brew install pods
+    brew install --cask cocoapods
 else
     echo "Opção inválida. Por favor, escolha 1 ou 2."
 fi
